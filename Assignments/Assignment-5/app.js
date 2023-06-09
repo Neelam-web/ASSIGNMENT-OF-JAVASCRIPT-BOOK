@@ -1,8 +1,9 @@
 
-// ASSIGNMENT 5
+// ******************ASSIGNMENT 5  Math Expression****************
+
+
 
 // TASK NO 1 : Write a program that take two numbers & add them in a new variable.Show the result in Your Browser:
-
 
 document.write("<br><br><b>Task 1" + "<br>")
 
@@ -11,6 +12,11 @@ var  num = 3 + 5 ;
 var sum ="num"
 
 document.write("<b><br><br>Sum of 3 and 5 is "+ num + "<br>" );
+
+
+// ................................End............................................
+
+
 
 //TASK 2. Repeat task1 for subtraction, multiplication, division &
 // modulus :
@@ -53,7 +59,7 @@ var divide = "divi";
 
 document.write("<br>Divide of 3 and 5 is " + divi + "<br>");
 
-
+//           ................................End............................................
 
 // TASK NO 3. Do the following using JS Mathematic Expressions
 // a. Declare a variable.
@@ -118,6 +124,8 @@ var remainder = 12 % 3;
 document.write("<br>The remainder is : " +  remainder +"<br>");
 
 
+// ................................End............................................
+
 // TASK NO 4 Cost of one movie ticket is 600 PKR. Write a script to store ticket price in a variable & calculate 
 // the cost of buying 5 tickets to amovie Example output:
 
@@ -132,6 +140,7 @@ var totalCost = 600 * 5 ;
 
 document.write("<br>Total cost to buy 5 tickets to a movie isM " + totalCost + "PKR");
 
+// ................................End............................................
 
 // TASK 5 : Write a script do display multiplication table of any number in your browser.E.g.
 
@@ -153,6 +162,7 @@ document.write("14 x 1 = " + table$1 + "<br>" + "14 x 2 = " + table$2 + " <br> "
 "14 x 4 = " + table$4 + " <br> " + " 14 x 5 = " + table$5 + "<br>" + " 14 x 6 = " + table$6 + " <br> " + " 14 x 7 = " + table$7 + "<br>" + 
 "14 x 8 = " + table$8 + " <br>" + " 14 x 9 = " + table$9 + "<br>" + " 14 x 10 = " + table$10 + " <br> ")
 
+// ................................End............................................
 
 // TASK 6. The Temperature Converter: It’s hot out! Let’s make a 
 // converter based on the steps here.
@@ -161,45 +171,32 @@ document.write("14 x 1 = " + table$1 + "<br>" + "14 x 2 = " + table$2 + " <br> "
 // c. Now store a Fahrenheit temperature into a variable.
 // // d. Convert it to Celsius & output “NNoF is NNoC”.
 
+// formula : celcius convert to fahrenhite C =( F -32)*5/9;
+// / formula : fahrenhite convert to celcius F =( C * 9 /5) + 32 ;
 
 document.write("<br><br>Task 6" + "<br><br>");
  
-// first convert Celcius in fahrenhite:
+// a. Store a Celsius temperature into a variable.
 
-var celcius = 25;
+//         Celsius to Fahrenheit
+var celciusTemp = 25;
 
-var convertInFahrenhite = 77;
+// b. Convert it to Fahrenheit & output “NNoC is NNoF”.
+var convertToFahrenheit = celciusTemp  * 9/5 + 32
+var celciusResult= (convertToFahrenheit)
+document.write(celciusTemp + "°C is" + " " + celciusResult + " " + " °F"+ "<br/>")
 
-// Conversion formula :
+//          Fahrenheit to Celsius
+// c. Now store a Fahrenheit temperature into a variable.
+var farenhiteTemp = 70;
 
-// C = (F - 32) * 5/9 :
+// d. Convert it to Celsius & output “NNoF is NNoC”.
 
-var cel = 77 - 32;
+var convertToCelsius = farenhiteTemp-32*5/9
+var farResult=(convertToCelsius)
+document.write(farenhiteTemp + "°F is" + " " + farResult + " " + " °C")
 
-var resultC = "cel" * 5 / 9;
-
-
-// celcius is = 25 and fahrenhite = 77 
-
-// formula : celcius convert to fahrenhite C =( F -32)*5/9;
-// / formula : celcius convert to fahrenhite F =( C * 9 /5) + 32 ;
-
-
-var fahrenhite = 77;
-
-var onvertInCelcius= 25;
-
- // Conversion formula :
-
-//  F = (C * 9 / 5) + 32:
-
-var fahren = 25 * 9;
-
-var resultF = "fahren" / 5;
-
-var fah = "resultF" + 32;
-
-document.write(resultC +"C"  + "is" + fah + "F");
+// ...........................End......................................
 
 // TASK NO 7. Write a program to implement checkout process of a 
 // shopping cart system for an e-commerce website. Store 
@@ -219,7 +216,6 @@ document.write("<h1><br>Shopping Cart</br></h1>");
 
 var priceOfItem_1 = 650;
 
-
 var costOfItem_1 = 650 * 3;
 
 var priceOfItem_2 = 100;
@@ -233,6 +229,10 @@ var ShippingCharges = 100;
 var total = 650 *3 + 100 * 7 + 100;
 
 document.write("<b>Price of 1 item is 650<br> Quantity of 1 item is 3 <br> Price of item 2 is 100 <br> Quantity of item 2 is 7 <br> Shipping Charges 100 <br> <br> <br>Total Cost Of Your Order is" + total + "<br>");
+
+
+// ...........................End......................................
+
 
 // TAsk 8. Store total marks & marks obtained by a student in 2 
 // variables. Compute the percentage & show the result in 
@@ -252,6 +252,10 @@ var result = computePercentage * 100 ;
 
   document.write("Total marks:" + totalMarks + "<br> <br>" + "Marks obtained:" + obtainedMarks + "<br><br>" + "Percentage:" + result +"%" + "<br>")
 
+
+  // ...........................End......................................
+
+
 //    TASK 9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a 
 //    script to convert the total currency to Pakistani Rupees. 
 //    Perform all calculations in a single expression.
@@ -269,6 +273,9 @@ var riyal = 25;
 var exchangeInPkr = 28 * 25 + 104.80 * 10;
 
 document.write("<b><br>Total Currency in PKR:" + exchangeInPkr +"<br>");
+
+
+// ...........................End......................................
 
 // 10. Write a program to initialize a variable with some
 // number and do arithmetic in following sequence:
@@ -288,6 +295,11 @@ var multiplyByTen = addFive * 10;
 var divideByTwo = multiplyByTen / 2;
 
 document.write(" write some number like 5 <br>and Add 5 <br> Multiply by 10 <br> Divide the result by 2 <br><br> The Result is 50")
+
+
+// ...........................End......................................
+
+
 
 // TASK 11. The Age Calculator: Forgot how old someone is?
 // Calculate it!
@@ -310,6 +322,10 @@ var YourAge = 2016 - 1992;
 
 document.write("Current Year : 2016 <br> Birth Year : 1992 <br>  Your Age : 24<b>" );
 
+// ...........................End......................................
+
+// 
+
 //TASK  12. The Geometrizer: Calculate properties of a circle.
 // a. Store a radius into a variable.
 
@@ -329,6 +345,8 @@ var radius = 20;
 var pi = 2 * 3.1415992 *radius;
 
 document.write("<b> Radius of a Circle : 20 <br> <br>The Cirumference is : 125.6999999 <br><br><b>" +  "The area is :<b>" + pi );
+
+// ...........................End......................................
 
 
 // TASK 13. The Lifetime Supply Calculator: Ever wonder how
@@ -361,3 +379,5 @@ var r = 65 - 15;
 var calculate = r * 3;
 
 document.write("<b>Favourite Snake is : ChocolateChip<b><br><br>Current Age : 15<br><br> Estimate Maximumt Age :65 <br><br>Amount of Snacks per day: 3<br><br> You will need  " + calculate + "  chocolate chip to last untill the ripe old age of 65");
+
+// ...........................End......................................

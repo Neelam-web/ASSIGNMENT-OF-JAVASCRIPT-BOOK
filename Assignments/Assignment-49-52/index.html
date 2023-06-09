@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Assignment -49-52 Events -->
+
+    <!--TASK NO 1. Create a signup form and display form data in your web  -->
+    <!-- page on submission. -->
+
+    
+     <form onsubmit="myData(event)">
+
+
+        <label for="fname"><b>First Name:</b></label><br>
+        <input type="text" id="fname" name="fname" placeholder ="Enter your Firstname" pattern="[A-Za-z]{10}" title="please enter only character"><br>
+        <br>
+        <label for="lname"><b>Last Name:</b></label><br>
+        <input type="text" id="lname" name="lname"placeholder ="Enter your Lastname"pattern="[A-Za-z]"title="please enter only character"><br>
+        <br>  
+    
+        <label for="gender"><b>Gender:</b></label><br><br>
+        <select name="gender" id="gender"><br>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <label for="country"><b>Country:</b></label><br>
+        <input type="text" id="country" name="county"placeholder ="Enter your country"><br>
+          <br>
+        <label for="Phone No"><b>Phone No:</b></label><br>
+        <input type="text" id="phoneNo" name="Phone No"placeholder ="Enter your Phone No"><br>
+        <br>
+        <label for="pwd"><b>Password:</b></label><br>
+        <input type="password" id="pwd" name="pwd"placeholder ="Enter your Password"required
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+        <br>
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" name="email"placeholder ="Enter your Email"required
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <select name="domain" id ="domain">
+          <option value=".com">.com</option>
+          <option value=".pk">.pk</option>
+          <option value=".co">.co</option><br><br><br>
+          
+        </select>
+        
+      </form>
+      <br>
+      <input type="submit" value="SUBMIT">
+
+<br><br>
+      <!-- .................................................End............................................ -->
+        
+      <!-- 2. Suppose in your webpage there is content area in which 
+you have entered your item details, but user can only see 
+some details on first look. When user clicks on “Read 
+more” button, full detail of that particular item will be 
+displayed. 
+     -->
+
+      <img id="image" src="https://www.aishaimranofficial.com/images/thumbs/0001348_parize.jpeg"weight="500px" height="500px">
+      <p id="para"><b><mark>Only 599$</mark>
+        <br>Bridal Collection
+        <br> 
+        SKU: AIS-01
+        Design Code: AIS-01<br>
+        Color: Maroon
+        Fabric: Raw Silk<br>
+        Work Details: Embellished<br><br>
+      
+        <button onclick="readmore()"><b>ReadMore</b></button></b>
+
+       
+<!-- ...................................................End.......................................................... -->
+      
+
+<!-- 3. In previous assignment you have created a tabular data 
+using javascript. Let’s modify that. Create a form which 
+takes student’s details and show each student detail in 
+table. Each row of table must contain a delete button and 
+an edit button. On click on delete button entire row should 
+be deleted. On click on edit button, a hidden form will 
+appear with the values of that row. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./app.js">
+        </script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>
